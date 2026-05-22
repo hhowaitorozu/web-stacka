@@ -45,7 +45,7 @@ const HowItWorks: React.FC = () => {
   return (
     <section
       id="how-it-works"
-      className="px-4 lg:px-0"
+      className="px-4 lg:px-8 xl:px-0"
       style={{
         fontFamily: "Montserrat, sans-serif",
         paddingTop: "100px",
@@ -71,7 +71,8 @@ const HowItWorks: React.FC = () => {
       >
         <div
           style={{
-            width: "1206px",
+            width: "100%",
+            maxWidth: "1206px",
             height: "361px",
             margin: "0 auto",
             borderRadius: "24px",
@@ -87,10 +88,11 @@ const HowItWorks: React.FC = () => {
                 key={index}
                 onClick={() => setActive(index)}
                 style={{
-                  width: isActive ? "674px" : "133px",
+                  // Menggunakan flex-growth dinamis agar mengecil secara proporsional di desktop kecil
+                  flex: isActive ? "3 1 0%" : "1 1 0%",
                   height: "361px",
                   background: step.color,
-                  padding: isActive ? "55px 65px" : "0",
+                  padding: isActive ? "55px 5%" : "0",
                   boxShadow: isActive ? "0 8px 24px rgba(0,0,0,0.1)" : "none",
                   display: "flex",
                   flexDirection: "column",
@@ -141,7 +143,7 @@ const HowItWorks: React.FC = () => {
         </div>
       </div>
 
-      {/* ── MOBILE & TABLET LAYOUT ── */}
+      {/* ── MOBILE & TABLET LAYOUT (TIDAK DIUBAH SAMA SEKALI) ── */}
       <div 
         className="flex lg:hidden"
         style={{ 
@@ -166,7 +168,6 @@ const HowItWorks: React.FC = () => {
                 justifyContent: "center",
                 alignItems: "flex-start",
                 padding: isActive ? "28px 24px" : "15px 24px",
-                // ✅ minHeight saat tertutup dinaikkan jadi 80px biar agak gedean
                 minHeight: isActive ? "140px" : "80px", 
                 boxShadow: isActive ? "0 8px 24px rgba(0,0,0,0.08)" : "none",
                 transition: "all 0.3s ease",
