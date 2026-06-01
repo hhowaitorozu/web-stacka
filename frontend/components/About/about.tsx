@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="w-full xl:w-[1440px] h-auto lg:h-[980px] mx-auto px-4 md:px-6 lg:px-0 bg-white flex flex-col items-center py-6 lg:py-0"
+      className="w-full xl:max-w-[1440px] h-auto mx-auto px-4 md:px-6 lg:px-8 xl:px-0 bg-white flex flex-col items-center py-6 lg:py-[60px]"
     >
       {/* LOGO */}
       <div className="mt-0 md:mt-10 lg:mt-[60px]">
@@ -38,17 +38,13 @@ export default function About() {
       </div>
 
       {/* CARD SECTION */}
-      <div className="mt-5 md:mt-[55px] w-full lg:w-[1205px] flex flex-col md:flex-row md:flex-nowrap justify-between gap-6 md:gap-[20px] lg:gap-[31px]">
+      <div className="mt-5 md:mt-[55px] w-full xl:w-[1205px] flex flex-col md:flex-row md:flex-nowrap justify-between gap-6 md:gap-[20px] lg:gap-[31px]">
         
         {/* Card 1 */}
         <div
-          className="w-full md:flex-1 lg:w-[381px] h-auto lg:h-[247px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl"
+          className="w-full md:flex-1 xl:w-[381px] h-auto lg:min-h-[247px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl p-5 md:p-6 lg:pt-[51px] lg:pb-[50px] lg:px-[38px]"
           style={{ 
-            boxShadow: "0px 0px 33px rgba(0,0,0,0.08)",
-            paddingTop: "51px",
-            paddingBottom: "50px",
-            paddingLeft: "38px",
-            paddingRight: "38px"
+            boxShadow: "0px 0px 33px rgba(0,0,0,0.08)"
           }}
         >
           <h3
@@ -68,13 +64,9 @@ export default function About() {
 
         {/* Card 2 */}
         <div
-          className="w-full md:flex-1 lg:w-[381px] h-auto lg:h-[247px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl"
+          className="w-full md:flex-1 xl:w-[381px] h-auto lg:min-h-[247px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl p-5 md:p-6 lg:pt-[51px] lg:pb-[50px] lg:px-[38px]"
           style={{ 
-            boxShadow: "0px 0px 33px rgba(0,0,0,0.08)",
-            paddingTop: "51px",
-            paddingBottom: "50px",
-            paddingLeft: "38px",
-            paddingRight: "38px"
+            boxShadow: "0px 0px 33px rgba(0,0,0,0.08)"
           }}
         >
           <h3
@@ -94,13 +86,9 @@ export default function About() {
 
         {/* Card 3 */}
         <div
-          className="w-full md:flex-1 lg:w-[381px] h-auto lg:h-[247px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl"
+          className="w-full md:flex-1 xl:w-[381px] h-auto lg:min-h-[247px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl p-5 md:p-6 lg:pt-[51px] lg:pb-[50px] lg:px-[38px]"
           style={{ 
-            boxShadow: "0px 0px 33px rgba(0,0,0,0.08)",
-            paddingTop: "51px",
-            paddingBottom: "50px",
-            paddingLeft: "38px",
-            paddingRight: "38px"
+            boxShadow: "0px 0px 33px rgba(0,0,0,0.08)"
           }}
         >
           <h3
@@ -140,8 +128,8 @@ export default function About() {
         </div>
 
         <div
-            className="w-full lg:w-[747px] text-sm md:text-base lg:text-[16px] leading-relaxed space-y-4 lg:space-y-[18px] text-justify"
-            style={{ fontFamily: "Montserrat", color: "#9D9D9D" }}
+          className="w-full lg:max-w-[747px] text-sm md:text-base lg:text-[16px] leading-relaxed space-y-4 lg:space-y-[18px] text-justify"
+          style={{ fontFamily: "Montserrat", color: "#9D9D9D" }}
         >
           <p>
             Stacka is a platform designed to help students access shared study
